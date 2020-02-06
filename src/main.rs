@@ -32,3 +32,12 @@ fn handle_arguments() {
         inputs.0, operator_string, inputs.1, result
     );
 }
+
+#[test]
+fn testAddition() {
+    let maths = Mathematics::new();
+    let lhs = 5;
+    let rhs = 10;
+
+    maths.equation(lhs, rhs, Symbol::Addition);
+}
